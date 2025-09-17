@@ -50,8 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Modifier</button>
-                <a href="page_categorie.php?=" class="btn btn-secondary">Annuler</a>
+                <a href="page_categorie.php?id=<?= $categorie['id']; ?>" type="submit" class="btn btn-primary" name="modifier_categorie">Modifier</a>
+                <a href="page_categorie.php?=" class="btn btn-secondary" name="annuler_categorie">Annuler</a>
             </div>
         </form>
     </div>

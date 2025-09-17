@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label for="mot_de_passe">Mot de passe</label>
             <input type="password" name="mot_de_passe" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-primary">Se connecter</button>
+        <button type="submit" class="btn btn-primary" name="login">Se connecter</button>
         <div class="mt-3">
             <p>Pas de compte ? <a href="register.php">Inscrivez-vous</a></p>
         </div>

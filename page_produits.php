@@ -30,8 +30,8 @@ $produits = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="alert alert-success"><?= htmlspecialchars($_GET['message']); ?></div>
 <?php endif; ?>
         <div class="mb-3 d-flex justify-content-between align-items-end">
-                <a href="ajouter_produit.php?=" class="btn btn-success">+ Ajouter une Produits</a>
-                <a href="dashbord.php?=" class="btn btn-secondary">Retourner au dashbord</a>
+                <a href="ajouter_produit.php?=" class="btn btn-success" name="add_produit">+ Ajouter un Produit</a>
+                <a href="dashbord.php?=" class="btn btn-secondary" name="return">Retourner au dashbord</a>
         </div>
         <div class="">
                 

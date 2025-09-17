@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label for="">Confirmer votre mot de passe</label>
             <input type="password" name="mot_de_passeConfirm" class="form-control" >
         </div>
-        <button type="submit" class="btn btn-primary mt-3"> M'inscrire</button>
+        <button type="submit" class="btn btn-primary mt-3" name="s_inscrire"> M'inscrire</button>
         <div class="mt-3">
             <p> <a href="login.php">Se connecte</a></p>
         </div>

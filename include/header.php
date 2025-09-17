@@ -78,8 +78,8 @@ $current_page = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']
                     <a class="nav-link <?= ($current_page == 'produits_materiel .php') ? 'active' : ''; ?>" href="produits_materiel.php?categorie=Materiel informatique">Matériel informatique</a>
                 </li>
             </ul>
-            <a href="auth/login.php" type="button" class="btn btn-outline-warning me-2">Se connecter</a>
-            <a  href="auth/register.php" class="btn btn-login text-white  me-2">Inscription</a>
+            <a href="auth/login.php" type="button" class="btn btn-outline-warning me-2" name="se_connecter" >Se connecter</a>
+            <a  href="auth/register.php" class="btn btn-login text-white  me-2" name="inscription">Inscription</a>
             <a href="panier.php" class="btn-panier">
             🛒<i class="bi bi-cart4"></i> (<?php echo isset($_SESSION['panier_total']) ? $_SESSION['panier_total'] : 0; ?> €)
             </a>

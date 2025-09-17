@@ -21,8 +21,8 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <!-- Bouton Ajouter une Catégorie -->
         <div class="mb-3 d-flex justify-content-between align-items-end">
-            <a href="ajouter_categorie.php" class="btn btn-success">+ Ajouter une Catégorie</a>
-            <a href="dashbord.php?=" class="btn btn-secondary">Retourner au dashbord</a>
+            <a href="ajouter_categorie.php" class="btn btn-success" name="add_categorie">+ Ajouter une Catégorie</a>
+            <a href="dashbord.php?=" class="btn btn-secondary" name="return">Retourner au dashbord</a>
         </div>
 
         <!-- Tableau des Catégories -->
@@ -40,8 +40,8 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <td><?= htmlspecialchars($categorie['id']); ?></td>
                         <td><?= htmlspecialchars($categorie['nom']); ?></td>
                         <td>
-                            <a href="modifier_categorie.php?id=<?= $categorie['id']; ?>" class="btn btn-warning btn-sm">Modifier</a>
-                            <a href="supprimer_categorie.php?id=<?= $categorie['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Voulez-vous vraiment supprimer cette catégorie ?');">Supprimer</a>
+                            <a href="modifier_categorie.php?id=<?= $categorie['id']; ?>" class="btn btn-warning btn-sm" name="modifier">Modifier</a>
+                            <a href="supprimer_categorie.php?id=<?= $categorie['id']; ?>" class="btn btn-danger btn-sm" name="supprimer" onclick="return confirm('Voulez-vous vraiment supprimer cette catégorie ?');">Supprimer</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

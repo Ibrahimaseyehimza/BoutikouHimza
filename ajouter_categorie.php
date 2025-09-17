@@ -39,8 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-success">Ajouter</button>
-                <a href="categories.php" class="btn btn-secondary">Annuler</a>
+                <button type="submit" class="btn btn-success" name="ajouter">Ajouter</button>
+                <a href="categories.php" class="btn btn-secondary" name="annuler">Annuler</a>
             </div>
         </form>
     </div>

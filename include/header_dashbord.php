@@ -66,14 +66,14 @@
     <div class="sidebar">
         <li class="nav-item">
             <a class="nav-link" href="index.php" target="_blank">
-                <i class="fas fa-eye"></i> Voir le site
+                <i class="fas fa-eye" name="view_home"></i> Voir le site
             </a>
         </li>
 
         <h4 class="text-center">Page Admin</h4>
-        <a href="dashbord.php"><i class="fas fa-chart-line me-2"></i> Dashboard</a>
-        <a href="page_categorie.php?="><i class="fas fa-list me-2"></i> Catégories</a>
-        <a href="page_produits.php?="><i class="fas fa-box me-2"></i> Produits</a>
-        <a href="commandes.php?="><i class="fa fa-shopping-cart me-2"></i> Commandes</a>
-        <a href="auth/logout.php?=" class="text-danger"><i class="fas fa-sign-out-alt me-2"></i> Déconnexion</a>
+        <a href="dashbord.php"><i class="fas fa-chart-line me-2" name="dashboard"></i> Dashboard</a>
+        <a href="page_categorie.php?="><i class="fas fa-list me-2" name="categorie"></i> Catégories</a>
+        <a href="page_produits.php?="><i class="fas fa-box me-2" name="produits"></i> Produits</a>
+        <a href="commandes.php?="><i class="fa fa-shopping-cart me-2" name="commandes"></i> Commandes</a>
+        <a href="auth/logout.php?=" class="text-danger"><i class="fas fa-sign-out-alt me-2" name="deconnexion"></i> Déconnexion</a>
     </div>
